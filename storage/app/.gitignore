@@ -1,0 +1,5 @@
+*
+!public/
+!.gitignore
+!certificate-2023-12-21-bnpl.pem
+!private.key

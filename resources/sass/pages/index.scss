@@ -1,0 +1,34 @@
+@import "contacts";
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80px;
+
+    @media (min-width: 768px) {
+        padding-left: 20px;
+        padding-right: 20px;
+        max-width: 1280px;
+        height: 88px;
+    }
+
+    @media (min-width: 1280px) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    @media (min-width: 1536px) {
+        max-width: 1536px;
+        padding-left: 68px;
+        padding-right: 68px;
+    }
+
+    &__inner-mobile {
+        @media (max-width: 768px) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+    }
+}

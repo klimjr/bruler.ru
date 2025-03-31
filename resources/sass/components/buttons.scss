@@ -1,0 +1,199 @@
+.button-outline-rounded {
+  cursor: pointer;
+  font-family: "Manrope Regular", sans-serif !important;
+  background: linear-gradient(180deg, rgba(98, 98, 98, 0.20) 0%, rgba(98, 98, 98, 0.00) 100%);
+  backdrop-filter: blur(2.5px);
+  color: white !important;
+  border: 1px solid #fff;
+  padding: 8px 20px;
+  @apply block rounded-[28px];
+}
+
+.button-white {
+  @apply bg-white border border-white w-fit rounded-lg py-2 px-4 transition min-w-[129px] h-[35px] shadow-sm md:min-w-[188px] md:min-h-[48px] hover:border-secondary;
+
+  &:active {
+    @apply border-secondary bg-secondary;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+.dolyami-button {
+  &:hover {
+    color: white !important;
+    @apply bg-primary;
+
+    .small-text {
+      color: white !important;
+    }
+    svg {
+      filter: invert(1);
+    }
+  }
+}
+
+.btn-outlined {
+    --size-sm: 32px;
+    --size-md: 40px;
+    --size-xl: 48px;
+
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--black);
+    color: var(--black);
+
+    transition: background-color 0.3s, color 0.3s;
+
+    @media (hover: hover) {
+        &:hover {
+            color: #ffffff;
+            background-color: var(--black);
+        }
+    }
+
+    &:active,
+    &.active {
+        color: #ffffff;
+        background-color: var(--black);
+    }
+
+    &.disabled {
+        border-color: var(--color-111) !important;
+        color: var(--color-111) !important;
+        cursor: not-allowed !important;
+        pointer-events: none !important;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom right, transparent calc(50% - 1px), var(--color-111) , transparent calc(50% + 1px) )
+        }
+        //&::before {
+        //    content: '';
+        //    position: absolute;
+        //    top: 50%;
+        //    left: -10%;
+        //    width: 120%;
+        //    height: 2px;
+        //    background-color: var(--color-111);
+        //    transform: rotate(-45deg);
+        //    transform-origin: center;
+    }
+
+    &.sm {
+        height: var(--size-sm);
+        padding: 8px 12px;
+        border-radius: 12px;
+
+        &.square {
+            width: var(--size-sm);
+            padding: 8px 8px;
+        }
+    }
+    &.md {
+        height: var(--size-md);
+        padding: 8px 16px;
+        border-radius: 12px;
+
+        &.square {
+            width: var(--size-md);
+            padding: 8px 8px;
+        }
+    }
+    &.lg {
+        height: var(--size-xl);
+        padding: 8px 24px;
+        border-radius: 16px;
+
+        &.square {
+            width: var(--size-xl);
+            padding: 8px 8px;
+        }
+    }
+}
+
+.btn-black {
+    --size-sm: 32px;
+    --size-md: 40px;
+    --size-xl: 48px;
+
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--black);
+    background-color: var(--black);
+    color: #ffffff;
+
+    transition: background-color 0.3s, color 0.3s, opacity 0.3s;
+
+    @media (hover: hover) {
+        &:hover {
+            opacity: 0.8;
+            color: #ffffff;
+            background-color: var(--black);
+        }
+    }
+
+    &:active,
+    &.active {
+        color: #ffffff;
+        background-color: var(--black);
+    }
+
+    &.disabled {
+        border-color: var(--color-111) !important;
+        background-color: var(--color-111) !important;
+        color: #ffffff !important;
+        cursor: not-allowed !important;
+        pointer-events: none !important;
+    }
+
+    &.square {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &.sm {
+        height: var(--size-sm);
+        padding: 8px 12px;
+        border-radius: 12px;
+
+        &.square {
+            width: var(--size-sm);
+            padding: 8px 8px;
+        }
+    }
+    &.md {
+        height: var(--size-md);
+        padding: 8px 16px;
+        border-radius: 12px;
+
+        &.square {
+            width: var(--size-md);
+            padding: 8px 8px;
+        }
+    }
+    &.lg {
+        height: var(--size-xl);
+        padding: 8px 24px;
+        border-radius: 16px;
+
+        &.square {
+            width: var(--size-xl);
+            padding: 8px 8px;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+:root {
+    --color-111: #999999;
+    --grey-100: #F7F7F7;
+    --grey-200: #EBEBEB;
+    --grey-300: #5A5A5A;
+    --black: #131313;
+    --black-opacity: rgba(19, 19, 19, 0.5);
+    --red: #D23C3C;
+    --green: #16945E;
+    --green-100: #DAF3EA;
+
+    // sizes
+    --headerSize: 48px;
+    --headerSizeAndRunnigs: 48px;
+    --heightFullBanner: calc(100dvh - 52px);
+    --heightFullBannerRunning: calc(100dvh - 96px);
+
+    // shadow
+    --headerShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)';
+
+
+    @media screen and (min-width: 768px) {
+        --headerSize: 56px ;
+        --headerSizeAndRunnigs: 88px;
+    }
+}

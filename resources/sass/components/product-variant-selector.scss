@@ -1,0 +1,19 @@
+.sizes {
+  .size.active {
+    color: #fff !important;
+    @apply bg-primary;
+  }
+  .size.inactive {
+    position: relative;
+    color: #626262 !important;
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: '';
+      background-image: url('data:image/svg+xml,<svg width="60" height="51" viewBox="0 0 60 51" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="0.645352" y1="1.23611" x2="58.6454" y2="50.2361" stroke="%23626262" stroke-width="2"/></svg>');
+    }
+  }
+}

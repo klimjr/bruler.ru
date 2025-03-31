@@ -1,0 +1,29 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "@tailwindcss/forms": "^0.5.7",
+        "@tailwindcss/typography": "^0.5.10",
+        "autoprefixer": "^10.4.16",
+        "laravel-vite-plugin": "^0.8.1",
+        "resolve-url-loader": "^5.0.0",
+        "sass": "^1.69.5",
+        "sass-loader": "^13.3.2",
+        "tailwindcss": "^3.3.5",
+        "vite": "^4.5.0"
+    },
+    "dependencies": {
+        "@sentry/browser": "^7.40.0",
+        "@vitejs/plugin-basic-ssl": "^1.0.1",
+        "axios": "^1.6.2",
+        "dotenv": "^16.3.1",
+        "livewire-sortable": "github:livewire/sortable",
+        "nouislider": "^15.8.1",
+        "pinch-zoom-js": "^2.3.5",
+        "swiper": "^11.0.5"
+    }
+}

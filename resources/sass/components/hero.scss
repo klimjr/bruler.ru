@@ -1,0 +1,16 @@
+.hero {
+  position: relative;
+
+  .object-hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  background-size: cover;
+  padding-bottom: 0;
+  @apply h-[667px] w-full md:h-screen flex justify-center items-end relative;
+}
